@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LaunchActivity$PlaceholderFragment"
+    android:background="@drawable/orangebg">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phoneNumber"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:singleLine="false"
+        android:hint="Enter Number"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/userName"
+        android:gravity="center_horizontal"
+        android:hint="Enter Username"
+        android:textAlignment="center"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_alignLeft="@+id/phoneNumber"
+        android:layout_alignStart="@+id/phoneNumber" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countries"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/phoneNumber"
+        android:layout_toLeftOf="@+id/extension"
+        android:layout_alignLeft="@+id/phoneNumber"
+        android:layout_alignStart="@+id/phoneNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+852"
+        android:id="@+id/extension"
+        android:layout_alignTop="@+id/countries"
+        android:layout_toRightOf="@+id/phoneNumber"
+        android:layout_above="@+id/phoneNumber"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/register_submit"
+        android:layout_below="@+id/displayName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/displayName"
+        android:gravity="center_horizontal"
+        android:hint="Enter Display Name"
+        android:textAlignment="center"
+        android:layout_below="@+id/userName"
+        android:layout_alignLeft="@+id/userName"
+        android:layout_alignStart="@+id/userName" />
+
+</RelativeLayout>

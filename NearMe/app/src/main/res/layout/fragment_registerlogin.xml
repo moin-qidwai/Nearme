@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.nearme.moin.nearme.RegisterFragment"
+    android:background="@drawable/orangebg">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register_button"
+        android:layout_marginTop="224dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/login_button"
+        android:layout_alignStart="@+id/login_button"
+        android:background="#ffff7345" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login_button"
+        android:background="#ffffd34e"
+        android:layout_below="@+id/register_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+</RelativeLayout>
